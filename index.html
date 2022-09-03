@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="design.css" media="all">
+</head>
+<body>
+    <header>
+        <h1>JRCode</h1>
+
+        <nav>
+            <ul>
+                <li><a id="a1" onclick="mudaCor('a1')" href="#campo1">Informações Pessoais ></a></li>
+                <li><a id="a2" onclick="mudaCor('a2')" href="#campo2">Plano ></a></li>
+                <li><a id="a3" onclick="mudaCor('a3')" href="#botao">Confirmação</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <form action="resposta.html" method="post" autocomplete="on">
+
+            <fieldset id="campo1">
+
+                <h2>Informações Pessoais</h2>
+
+                <label for="nome">
+                    Nome</label><br>
+                    <input id="nome" name="nome" type="text" placeholder="Ex: Gabriely" minlength="3" autocomplete="name" required>
+                <br>
+
+                <label for="sobrenome">
+                    Sobrenome</label><br>
+                    <input id="sobrenome" name="sobrenome" type="text" placeholder="Ex: Lira" minlength="3" autocomplete="family-name" required>
+                <br>
+
+                <label for="email">
+                    E-mail</label><br>
+                <input id="email" name="email" type="email" placeholder="Ex: email@gmail.com" required>
+                <br>
+
+                <label for="endereco">
+                    Endereço</label><br>
+                <input id="endereco" name="endereco" type="text" placeholder="Ex: Rua Planaltina" autocomplete="street-address" required>
+                <br>
+
+                <label for="cidade">
+                    Cidade</label><br>
+                <input id="cidade" name="cidade" type="text" placeholder="Ex: Brasília" autocomplete="address-level2" required>
+                <br>
+
+                <label for="pais">
+                    País</label><br>
+                <select name="pais" id="pais">
+                    <option value="brasil">Brasil</option>
+                    <option value="argentina">Argentina</option>
+                    <option value="equador">Equador</option>
+                    <option value="colombia">Colômbia</option>
+                    <option value="uruguai">Uruguai</option>
+                </select>
+                <br>
+
+                <label for="telefone">
+                    Telefone</label><br>
+                <input id="telefone" name="telefone" type="tel" autocomplete="tel-extension" placeholder="(xx) xxxxx-xxxx" pattern="^\(\d{2})\d{8,9}$" required>
+                <br>
+
+            </fieldset>
+            <br>
+        
+            <fieldset id="campo2">
+
+                <h2>Assinatura</h2>
+
+                <p>Tipo de plano</p>
+
+                <div id="div-caixa">
+                    <div class="caixa">
+                        <strong>0$</strong>
+                        <p>Conteúdo gratuito limitado.</p>
+                    </div>
+
+                    <div class="caixa">
+                        <strong>45$</strong>
+                        <p>Com mais aulas e cursos disponíveis.</p>
+                    </div>
+                </div>
+
+            </fieldset>
+
+            <fieldset id="campo3">
+                <input type="checkbox" class="check">
+                <label>
+                    Receber conteúdos por e-mail.
+                </label><br>
+
+                <input type="checkbox" class="check">
+                <label>
+                    Criar uma conta.
+                </label><br>
+                <br>
+
+                <input id="botao" type="submit" value="Confirmar cadastro">
+            </fieldset>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

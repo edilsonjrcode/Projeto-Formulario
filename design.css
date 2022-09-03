@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Cabeçalho*/
+
+header{
+    width: 100%;
+    height: 17vh;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+header h1{
+    font-family: 'Nunito', sans-serif;
+    color: #a948a7;
+    padding: 2vh;
+    font-weight: 900;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+header nav ul a{
+    color: rgb(182, 181, 181);
+    font-size: 0.9em;
+    text-decoration: none;
+    margin-right: 5px;
+    font-weight: 500;
+}
+
+/*Formulário Informações*/
+
+fieldset#campo1{
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 3vh;
+    background: #fdfdfd;
+    border: 1px solid rgb(226, 226, 226);
+}
+
+fieldset#campo1 label{
+    color: #777;
+    font-size: 0.9em;
+}
+
+fieldset#campo1 h2{
+    color: rgb(67, 67, 67);
+    text-align: center;
+    margin-bottom: 0.8em;
+    font-weight: 600;
+}
+
+fieldset#campo1 input, select{
+    height: 3em;
+    width: 60%;
+    border-radius: 4px;
+    margin-bottom: 1em;
+    padding: 5px;
+    border: 1px solid rgb(226, 226, 226);
+}
+
+fieldset#campo1 input::placeholder{
+    font-size: 0.9em;
+    padding: 8px;
+}
+
+/*****************************************/
+
+fieldset#campo2 {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 3vh;
+    background: #fdfdfd;
+    border: 1px solid rgb(226, 226, 226);
+}
+
+fieldset#campo2 h2 {
+    color: rgb(67, 67, 67);
+    text-align: center;
+    margin-bottom: 0.8em;
+    font-weight: 600;
+}
+
+fieldset#campo2 p{
+    color: #777;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+fieldset#campo2 label {
+    color: #777;
+    font-size: 0.9em;
+}
+
+fieldset#campo2 #div-caixa{
+    display: flex;
+    justify-content:space-evenly;
+}
+
+fieldset#campo2 #div-caixa .caixa{
+    text-align: center;
+    padding: 50px 10px;
+    border: 1px solid rgb(226, 226, 226);
+    border-radius: 4px;
+    height: 25vh;
+    width: 45%;
+    background: #fff;
+
+}
+
+fieldset#campo2 #div-caixa .caixa strong{
+    color: #a948a7;
+    font-size: 3em;
+}
+
+fieldset#campo2 #div-caixa .caixa p {
+    color: #777;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+/**************************************************/
+
+fieldset#campo3{
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px 10px;
+    line-height: 4vh;
+    background: #fdfdfd;
+    border: none;
+}
+
+fieldset#campo3 label {
+    color: #777;
+    font-size: 1em;
+}
+
+fieldset#campo3 input.check{
+    height: 1.2em;
+    width: 1.2em;
+    border-radius: 4px;
+    border: 1px solid rgb(226, 226, 226);
+}
+
+fieldset#campo3 #botao{
+    width: 100%;
+    height: 5em;
+    margin: 0 auto;
+    background: #a948a7;
+    color: #fff;
+    border: 1px solid #a948a7;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 1em;
+}
