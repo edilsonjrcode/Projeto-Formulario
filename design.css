@@ -16,6 +16,7 @@ header{
     align-items: center;
     text-align: center;
     padding: 10px;
+    background: #fdfdfd;
 }
 
 header h1{
@@ -37,6 +38,10 @@ header nav ul a{
     text-decoration: none;
     margin-right: 5px;
     font-weight: 500;
+}
+
+header nav ul a:hover {
+    color: #a948a7;
 }
 
 /*Formulário Informações*/
@@ -63,8 +68,8 @@ fieldset#campo1 h2{
 }
 
 fieldset#campo1 input, select{
-    height: 3em;
-    width: 60%;
+    height: 3.5em;
+    width: 90%;
     border-radius: 4px;
     margin-bottom: 1em;
     padding: 5px;
@@ -74,7 +79,7 @@ fieldset#campo1 input, select{
 fieldset#campo1 input:focus,
 select:focus{
     outline: 1px groove #a948a7;
-    box-shadow:#a948a7 2px 1px 8px;
+    box-shadow:#a948a7 2px 1px 6px;
 }
 
 fieldset#campo1 input::placeholder{
@@ -106,10 +111,6 @@ fieldset#campo2 p{
     margin-bottom: 5px;
 }
 
-fieldset#campo2 label {
-    color: #777;
-    font-size: 0.9em;
-}
 
 fieldset#campo2 #div-caixa{
     display: flex;
@@ -124,6 +125,7 @@ fieldset#campo2 #div-caixa .caixa{
     height: 25vh;
     width: 45%;
     background: #fff;
+    cursor: pointer;
 
 }
 
