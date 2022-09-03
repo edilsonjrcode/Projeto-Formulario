@@ -71,6 +71,12 @@ fieldset#campo1 input, select{
     border: 1px solid rgb(226, 226, 226);
 }
 
+fieldset#campo1 input:focus,
+select:focus{
+    outline: 1px groove #a948a7;
+    box-shadow:#a948a7 2px 1px 8px;
+}
+
 fieldset#campo1 input::placeholder{
     font-size: 0.9em;
     padding: 8px;
